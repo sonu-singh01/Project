@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="email" placeholder="Type your username" id="username">
+                <box-icon type='solid' name='user'></box-icon>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Type your password">
+                <box-icon type='solid' name='lock-alt'></box-icon>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox"> remember me</label>
+                <a href="#">forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn" onclick="func()"
+            > Login
+            </button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">register</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        function func() {
+            var email=document.getElementById("username").value;
+            var pass=document.getElementById("password").value;
+            if (email == 'sonusinghpach1234@gmail.com' && pass == '12345')
+            {
+                alert("success full ! ")
+            }
+            else{
+                alert ("Wrong entry invalid")
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
